@@ -1,5 +1,5 @@
 from openpyxl import load_workbook
-filename = str(input("nazwa pliku: "))
+filename = str(input("type a name of an existing file: "))
 wb1 = load_workbook(filename+'.xlsx')
 ws1 = wb1.active
 countrow = 0
@@ -16,4 +16,4 @@ for x in ws1.iter_rows():
     c = ws1.cell(row=countrow, column=lastcol, value=match_num)
 print("Ta dam!")
 wb1.save(filename+'.xlsx')
-sth = input("")
+idle = input("")
